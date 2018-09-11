@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="logo.png">
+
+    <title>保恒投资管理-卓恒资本</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/menu-item3.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body onload='load()'>
+    <script type="text/javascript">
+    function GetQueryString(name)//这个方法去获得get参数
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+    }
+    function load(){
+        document.getElementById((GetQueryString("but"))).click();
+    }
+    </script>
+    <div class="top">
+      <div class="language">
+        <div class="language_1" style="padding-top:2px;"><a href="">EN</a></div>
+        <div class="language_1">|</div>
+        <div class="language_1" style="padding-top:2px;"><a href="#changeLan" onclick="changeLan()">中</a></div>
+      </div>
+    </div>
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header ">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#home" onclick="tabNav0()"><img id="logo" class="img " src="images/保恒投资管理-卓恒资本/logo.png"/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="navbar-center"><a href="#menu_item1" onclick="tabNav1()">Strategic advisory<br/> services</a></li>
+                <li class="navbar-center"><a href="#menu_item2" onclick="tabNav2()">Global property<br/> asset management</a></li>
+                <li class="navbar-center"><a href="#menu_item3" onclick="tabNav3()">Talent asset<br/> allocation</a></li>
+                <li class="navbar-center"><a href="#menu_item4" onclick="tabNav4()">High-end security<br/> services</a></li>
+                <li class="navbar-center"><a href="#menu_item5" onclick="tabNav5()">Value-added<br/> services</a></li>
+                <li class="navbar-center"><a href="#menu_item6" onclick="tabNav6()">About</a></li>
+                <li class="navbar-center"><a href="#menu_item7" onclick="tabNav7()"><img id="search" class="img " src="images/保恒投资管理-卓恒资本/search.png"/></a></li>
+                <li class="navbar-center"><a href="#menu_item8" onclick="tabNav8()"><img id="user" class="img " src="images/保恒投资管理-卓恒资本/user.png"/></a></li>
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+    <!-- 子菜单 -->
+    <div class="container submenu">
+        <div id="u108" class="ax_default">
+          <a href="#img1" onclick="show1()"><img id="u108_img" class="img " src="images/策略咨询-保恒投资/u108.png"/></a>
+        </div>
+        <div id="u109" class="ax_default">
+          <a href="#img2" onclick="show2()"><img id="u109_img" class="img " src="images/策略咨询-保恒投资/u109.png"/></a>
+        </div>
+        <div id="u110" class="ax_default">
+          <a href="#img3" onclick="show3()"><img id="u110_img" class="img " src="images/策略咨询-保恒投资/u110.png"/></a>
+        </div>    
+    </div>
+
+    <!-- 子子菜单 -->
+    <div id="sub_submenu" class="subsubmenu" style="display: none;">
+      <div class="container text_1">
+        <div class="subtitle1">
+          策略咨询服务
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">业务说明</a>
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">概述</a>
+        </div>
+      </div>
+      <div class="container"><hr style="opacity:0.3;height:1px;border:none;border-top:1px solid #DB271C;" /></div>
+    </div>
+    <div id="sub_submenu1" class="subsubmenu" style="display: none;">
+      <div class="container text_1">
+        <div class="subtitle1">
+          保加利亚·圣索菲亚项目
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">业务说明</a>
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">概述</a>
+        </div>
+      </div>
+      <div class="container"><hr style="opacity:0.3;height:1px;border:none;border-top:1px solid #DB271C;" /></div>
+    </div>
+    <div id="sub_submenu2" class="subsubmenu" style="display: none;">
+      <div class="container text_1">
+        <div class="subtitle1">
+          银基国际
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">业务说明</a>
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">概述</a>
+        </div>
+      </div>
+      <div class="container"><hr style="opacity:0.3;height:1px;border:none;border-top:1px solid #DB271C;" /></div>
+    </div>
+    <div id="sub_submenu3" class="subsubmenu" style="display: none;">
+      <div class="container text_1">
+        <div class="subtitle1">
+          pimco基金
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">业务说明</a>
+        </div>
+        <div class="subtitle2">
+          <a href="" class="subtitle_a">概述</a>
+        </div>
+      </div>
+      <div class="container"><hr style="opacity:0.3;height:1px;border:none;border-top:1px solid #DB271C;" /></div>
+    </div>
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div id="u1">
+      <div id=u1_001 class="container middle" style="background: url(images/策略咨询-保恒投资/u104.png) no-repeat center center; background-size: 100% 100%;">
+        <!-- Unnamed () -->
+        <div id="u104_1" class="text">
+        <h1>策略咨询服务</h1>
+        <a href="#img0" onclick="show0()" id='but1_1'><p>进一步了解&nbsp></p></a>
+        </div>
+      </div>
+      <div id="u1_002" class="container middle" style="background: url(images/策略咨询-保恒投资/u105.png) no-repeat center center; background-size: 100% 100%;">
+        <div id="u105_1" class="text">
+        <h1>保加利亚项目</h1>
+        <a href="#img1" onclick="show1()" id='but1_2'><p>进一步了解&nbsp></p></a>
+        </div>
+      </div>
+      <div id="u1_003" class="container middle" style="background: url(images/策略咨询-保恒投资/u106.png) no-repeat center center; background-size: 100% 100%;">
+        <div id="u106_1" class="text">
+        <h1>银基国际</h1>
+        <a href="#img2" onclick="show2()" id='but1_3'><p>进一步了解&nbsp></p></a>
+        </div>
+      </div>
+      <div id="u1_004" class="container middle" style="background: url(images/策略咨询-保恒投资/u107.png) no-repeat center center; background-size: 100% 100%;">
+        <div id="u107_1" class="text">
+        <h1>PIMCO基金</h1>
+        <a href="#img3" onclick="show3()" id='but1_4'><p>进一步了解&nbsp></p></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="u1_0" style="display:none">
+      <div id="u1_005" class="container middle" style="height:1080px; background: url(images/三级策略咨询服务/三级策略咨询服务_03.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+    </div>
+
+    <div id="u1_1" style="display:none">
+      <div id="u1_1_001" class="container middle" style="height:983px; background: url(images/三级保加利亚/三级保加利亚_03.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_002" class="container middle" style="height:1080px; background: url(images/三级保加利亚/三级保加利亚_04.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_003" class="container middle" style="height:1192px; background: url(images/三级保加利亚/三级保加利亚_05.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_004" class="container middle" style="height:1119px; background: url(images/三级保加利亚/三级保加利亚_06.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_005" class="container middle" style="height:1174px; background: url(images/三级保加利亚/三级保加利亚_07.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_006" class="container middle" style="height:1181px; background: url(images/三级保加利亚/三级保加利亚_08.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_007" class="container middle" style="height:1181px; background: url(images/三级保加利亚/三级保加利亚_09.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_008" class="container middle" style="height:1181px; background: url(images/三级保加利亚/三级保加利亚_10.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_009" class="container middle" style="height:1181px; background: url(images/三级保加利亚/三级保加利亚_11.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0010" class="container middle" style="height:1717px; background: url(images/三级保加利亚/三级保加利亚_12.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0011" class="container middle" style="height:955px; background: url(images/三级保加利亚/三级保加利亚_13.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0012" class="container middle" style="height:1027px; background: url(images/三级保加利亚/三级保加利亚_14.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0013" class="container middle" style="height:1093px; background: url(images/三级保加利亚/三级保加利亚_15.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0014" class="container middle" style="height:998px; background: url(images/三级保加利亚/三级保加利亚_16.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0015" class="container middle" style="height:1186px; background: url(images/三级保加利亚/三级保加利亚_17.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0016" class="container middle" style="height:1158px; background: url(images/三级保加利亚/三级保加利亚_18.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0017" class="container middle" style="height:1020px; background: url(images/三级保加利亚/三级保加利亚_19.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0018" class="container middle" style="height:850px; background: url(images/三级保加利亚/三级保加利亚_20.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0019" class="container middle" style="height:1144px; background: url(images/三级保加利亚/三级保加利亚_21.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0020" class="container middle" style="height:1198px; background: url(images/三级保加利亚/三级保加利亚_22.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0021" class="container middle" style="height:1137px; background: url(images/三级保加利亚/三级保加利亚_23.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0022" class="container middle" style="height:929px; background: url(images/三级保加利亚/三级保加利亚_24.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0023" class="container middle" style="height:1213px; background: url(images/三级保加利亚/三级保加利亚_25.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_1_0024" class="container middle" style="height:1166px; background: url(images/三级保加利亚/三级保加利亚_26.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+    </div>
+
+    <div id="u1_2" style="display:none">
+      <div id="u1_2_001" class="container middle" style="height:2256px; background: url(images/三级银基国际/三级银基国际_03.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_2_002"class="container middle" style="height:2254px; background: url(images/三级银基国际/三级银基国际_04.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+    </div>
+
+    <div id="u1_3" style="display:none">
+      <div id="u1_3_001" class="container middle" style="height:1949px; background: url(images/三级pimco基金/三级pimco基金_03.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+      <div id="u1_3_002" class="container middle" style="height:1811px; background: url(images/三级pimco基金/三级pimco基金_04.png) no-repeat center center; background-size: 100% 100%;">
+      </div>
+    </div>
+
+
+      <!-- START THE FEATURETTES -->
+ <div class="container marketing">
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-2">
+          <h3 class="featurette-heading">服务说明</h3>
+          <ul class="list">
+            <a href="StrategiesConsulting.html?but=but1_1"><li>策略咨询服务</li></a>
+            <a href="GlobalProperty.html?but=but2_1"><li>环球物业资产管理</li></a>
+            <a href="TalentAssets.html?but=but3_1"><li>人才资产配置</li></a>
+            <a href="UpscaleSecurity.html?but=but4_1"><li>高端保障服务</li></a>
+            <a href="Value-addedService.html"><li>增值服务</li></a>
+          </ul>
+          <h3 class="featurette-heading">关于我们</h3>
+          <ul class="list">
+            <a href="AboutUs.html"><li>联系我们</li></a>
+            <a href="http://www.powercharter.com.hk"><li>卓恒集团</li></a>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h3 class="featurette-heading">业务选择</h3>
+          <ul class="list">
+            <a href="GlobalProperty.html?but=but2_2"><li>以房养学，英国教育基金</li></a>
+            <a href="StrategiesConsulting.html?but=but1_2"><li>保加利亚投资项目（一带一路）</li></a>
+            <a href="TalentAssets.html?but=but3_2"><li>香港专才移民计划</li></a>
+            <a href="TalentAssets.html?but=but3_3"><li>香港升学移民服务</li></a>
+            <a href="StrategiesConsulting.html?but=but1_3"><li>银基国际</li></a>
+            <a href="StrategiesConsulting.html?but=but1_4"><li>PIMCO基金</li></a>
+            <a href="UpscaleSecurity.html?but=but4_3"><li>安进储蓄计划</li></a>
+            <a href="UpscaleSecurity.html?but=but4_4"><li>康齐危疾保障</li></a>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h3 class="featurette-heading">策略咨询服务</h3>
+          <ul class="list">
+            <a href="StrategiesConsulting.html?but=but1_2"><li>保加利亚（一带一路）项目</li></a>
+            <a href="StrategiesConsulting.html?but=but1_3"><li>银基国际</li></a>
+            <a href="StrategiesConsulting.html?but=but1_4"><li>PIMCO基金</li></a>
+          </ul>
+          <h3 class="featurette-heading">高端保障服务</h3>
+          <ul class="list">
+            <a href="UpscaleSecurity.html?but=but4_2"><li>AXA安盛</li></a>
+            <a href="UpscaleSecurity.html?but=but4_3"><li>安进储蓄计划</li></a>
+            <a href="UpscaleSecurity.html?but=but4_4"><li>康齐危疾保障</li></a>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h3 class="featurette-heading">环球物业资产管理</h3>
+          <ul class="list">
+            <a href="GlobalProperty.html?but=but2_2"><li>英国房产</li></a>
+            <a href="GlobalProperty.html?but=but2_3"><li>澳洲房产</li></a>
+            <a href="GlobalProperty.html?but=but2_4"><li>香港房产-天寰</li></a>
+            <a href="GlobalProperty.html?but=but2_5"><li>香港房产-创宏方</li></a>
+          </ul>
+          <h3 class="featurette-heading">增值服务</h3>
+          <ul class="list">
+            <a href=""><li>HPV加衡疫苗</li></a>
+            <a href=""><li>仁和医院&nbsp身体检查</li></a>
+            <a href=""><li>唐氏产前检</li></a>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h3 class="featurette-heading">人才资产配置</h3>
+          <ul class="list">
+            <a href="TalentAssets.html?but=but3_2"><li>香港专才移民计划</li></a>
+            <a href="TalentAssets.html?but=but3_3"><li>香港升学移民服务</li></a>
+            <a href="TalentAssets.html?but=but3_4"><li>多米尼克移民</li></a>
+            <a href="TalentAssets.html?but=but3_5"><li>英国移民</li></a>
+            <a href="TalentAssets.html?but=but3_6"><li>澳洲移民</li></a>
+            <a href="TalentAssets.html?but=but3_7"><li>美国移民</li></a>
+            <a href="TalentAssets.html?but=but3_8"><li>台湾移民</li></a>
+          </ul>
+  
+        </div>
+      </div>
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer class="foot foot-font">
+        <!-- <p class="pull-right"><a href="#">Back to top</a></p> -->
+        <div>
+          <p style="text-align:center;">卓恒集团</p>
+          <div class="f-left">
+              <p>卓恒移民顾问有限公司 Power Charter Immigration Consultants Limited</p>
+              <p>卓恒海外升学中心 Power Charter Overseas Studies Centre</p>
+              <p>公司地址:中国浙江省杭州市江干区丹桂街19号迪凯国际中心1404室</p>
+          </div>
+          <div class="f-right">
+              <p>卓恒国际物业有限公司 Power Charter International Property Limited</p>
+              <p>保恒投资管理有限公司 Power Charter Capital Limited</p>
+              <p>咨询电话:+86 571 87612605 Fax:+86 571 8761 2659</p>
+          </div>
+        </div>
+        <div style="width:100%;text-align:center;clear:both;"><p>网站版权：杭州保恒投资管理有限公司 www.bheng.cn</p></div>
+      </footer>
+
+    </div><!-- /.container -->
+
+  <script language="javascript" type="text/javascript">
+    $(document).ready(function(){  
+        //初始化宽度、高度  
+        var winwidth = $(window).width();
+        $(u1_001).height(0.5*winwidth);
+        $(u1_002).height(0.5*winwidth);
+        $(u1_003).height(0.5*winwidth);
+        $(u1_004).height(0.5*winwidth);
+        $(u1_005).height(0.68*winwidth);
+        $(u1_1_001).height(0.62*winwidth);
+        $(u1_1_002).height(0.68*winwidth);
+        $(u1_1_003).height(0.75*winwidth);
+        $(u1_1_004).height(0.71*winwidth);
+        $(u1_1_005).height(0.74*winwidth);
+        $(u1_1_006).height(0.75*winwidth);
+        $(u1_1_007).height(0.69*winwidth);
+        $(u1_1_008).height(0.73*winwidth);
+        $(u1_1_009).height(0.74*winwidth);
+        $(u1_1_0010).height(1.1*winwidth);
+        $(u1_1_0011).height(0.6*winwidth);
+        $(u1_1_0012).height(0.65*winwidth);
+        $(u1_1_0013).height(0.69*winwidth);
+        $(u1_1_0014).height(0.63*winwidth);
+        $(u1_1_0015).height(0.75*winwidth);
+        $(u1_1_0016).height(0.73*winwidth);
+        $(u1_1_0017).height(0.64*winwidth);
+        $(u1_1_0018).height(0.54*winwidth);
+        $(u1_1_0019).height(0.72*winwidth);
+        $(u1_1_0020).height(0.76*winwidth);
+        $(u1_1_0021).height(0.72*winwidth);
+        $(u1_1_0022).height(0.59*winwidth);
+        $(u1_1_0023).height(0.77*winwidth);
+        $(u1_1_0024).height(0.74*winwidth);
+        $(u1_2_001).height(1.43*winwidth);
+        $(u1_2_002).height(1.42*winwidth);
+        $(u1_3_001).height(1.23*winwidth);
+        $(u1_3_002).height(1.14*winwidth);
+
+        
+        //当文档窗口发生改变时 触发1 
+        $(window).resize(function(){  
+          winwidth = $(window).width();
+        $(u1_001).height(0.5*winwidth);
+        $(u1_002).height(0.5*winwidth);
+        $(u1_003).height(0.5*winwidth);
+        $(u1_004).height(0.5*winwidth);
+        $(u1_005).height(0.68*winwidth);
+        $(u1_1_001).height(0.62*winwidth);
+        $(u1_1_002).height(0.68*winwidth);
+        $(u1_1_003).height(0.75*winwidth);
+        $(u1_1_004).height(0.71*winwidth);
+        $(u1_1_005).height(0.74*winwidth);
+        $(u1_1_006).height(0.75*winwidth);
+        $(u1_1_007).height(0.69*winwidth);
+        $(u1_1_008).height(0.73*winwidth);
+        $(u1_1_009).height(0.74*winwidth);
+        $(u1_1_0010).height(1.1*winwidth);
+        $(u1_1_0011).height(0.6*winwidth);
+        $(u1_1_0012).height(0.65*winwidth);
+        $(u1_1_0013).height(0.69*winwidth);
+        $(u1_1_0014).height(0.63*winwidth);
+        $(u1_1_0015).height(0.75*winwidth);
+        $(u1_1_0016).height(0.73*winwidth);
+        $(u1_1_0017).height(0.64*winwidth);
+        $(u1_1_0018).height(0.54*winwidth);
+        $(u1_1_0019).height(0.72*winwidth);
+        $(u1_1_0020).height(0.76*winwidth);
+        $(u1_1_0021).height(0.72*winwidth);
+        $(u1_1_0022).height(0.59*winwidth);
+        $(u1_1_0023).height(0.77*winwidth);
+        $(u1_1_0024).height(0.74*winwidth);
+        $(u1_2_001).height(1.43*winwidth);
+        $(u1_2_002).height(1.42*winwidth);
+        $(u1_3_001).height(1.23*winwidth);
+        $(u1_3_002).height(1.14*winwidth);
+    
+        });
+      });
+      window.onbeforeunload=function(){ 
+         $('body').prop('scrollTop','0');
+      }
+      function tabNav0(){
+        window.location.href="index.html";
+      }
+      function tabNav1(){
+        window.location.href="StrategiesConsulting.html";
+      }
+      function tabNav2(){
+        window.location.href="GlobalProperty.html";
+      }
+      function tabNav3(){
+        window.location.href="TalentAssets.html";
+      }
+      function tabNav4(){
+        window.location.href="UpscaleSecurity.html";
+      }
+      function tabNav5(){
+        window.location.href="Value-addedService.html";
+      }
+      function tabNav6(){
+        window.location.href="AboutUs.html";
+      }
+      function changeLan(){
+        window.location.href="../StrategiesConsulting.html"
+      }
+      function show0(){
+        $('body').prop('scrollTop','0');
+        document.getElementById("sub_submenu").style.display="";
+        document.getElementById("sub_submenu1").style.display="none";
+        document.getElementById("sub_submenu2").style.display="none";
+        document.getElementById("sub_submenu3").style.display="none";
+        document.getElementById("u1_0").style.display="";
+        document.getElementById("u1").style.display="none";
+        document.getElementById("u1_1").style.display="none";
+        document.getElementById("u1_2").style.display="none";
+        document.getElementById("u1_3").style.display="none";
+      }
+      function show1(){
+        $('body').prop('scrollTop','0');
+        document.getElementById("sub_submenu1").style.display="";
+        document.getElementById("sub_submenu").style.display="none";
+        document.getElementById("sub_submenu2").style.display="none";
+        document.getElementById("sub_submenu3").style.display="none";
+        document.getElementById("u1_1").style.display="";
+        document.getElementById("u1").style.display="none";
+        document.getElementById("u1_0").style.display="none";
+        document.getElementById("u1_2").style.display="none";
+        document.getElementById("u1_3").style.display="none";
+      }
+      function show2(){
+        $('body').prop('scrollTop','0');
+        document.getElementById("sub_submenu2").style.display="";
+        document.getElementById("sub_submenu1").style.display="none";
+        document.getElementById("sub_submenu").style.display="none";
+        document.getElementById("sub_submenu3").style.display="none";
+        document.getElementById("u1_2").style.display="";
+        document.getElementById("u1").style.display="none";
+        document.getElementById("u1_0").style.display="none";
+        document.getElementById("u1_1").style.display="none";
+        document.getElementById("u1_3").style.display="none";
+      }
+      function show3(){
+        $('body').prop('scrollTop','0');
+        document.getElementById("sub_submenu3").style.display="";
+        document.getElementById("sub_submenu1").style.display="none";
+        document.getElementById("sub_submenu2").style.display="none";
+        document.getElementById("sub_submenu").style.display="none";
+        document.getElementById("u1_3").style.display="";
+        document.getElementById("u1").style.display="none";
+        document.getElementById("u1_0").style.display="none";
+        document.getElementById("u1_1").style.display="none";
+        document.getElementById("u1_2").style.display="none";
+      }
+    </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

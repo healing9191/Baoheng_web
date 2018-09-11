@@ -1,0 +1,113 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+/* submenu
+-------------------------------------------------- */
+.submenu {
+  position: relative;
+  width: 100%;
+  /*height: 153px;*/
+  background-color: #DE5351;
+  z-index: 20;
+  text-align: center;
+  padding-top: 40px;
+}
+.subsubmenu {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  z-index: 20;
+  text-align: center;
+}
+.subsubmenu .text_1 {
+  text-align: left;
+  padding-top: 15px;
+}
+.subtitle1 {
+  font-family: SimHei;
+  font-weight: 600;
+  width: 160px;
+  color: #000;
+  font-size: 16.55px;
+  text-align : left;
+  display: inline;
+  float: left;
+}
+.subtitle2 {
+  padding-top: 5px;
+  margin-right: 0;
+  margin-left: 22px;
+  
+  text-align : right;
+  display: inline;
+  float: right;
+}
+.subtitle_a {
+  color: #000;
+  font-size: 12.42px;
+  font-family: SimHei;
+}
+.subtitle_a:hover,
+.subtitle_a:focus {
+  color: #D3D3D3;
+  text-decoration: none;
+  background-color: transparent;
+}
+.subsubmenu hr {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.ax_default {
+  position:relative;
+  display: inline;
+  animation: mymove 0.7s 1;
+  -webkit-animation: mymove 0.7s 1; /*Safari and Chrome*/
+}
+
+
+
+@keyframes mymove
+{
+from {left:100%;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {left:100%;}
+to {left:0px;}
+}
+
+
+/* Center align the text within the three columns below the carousel */
+.middle {
+  width: 100%;
+  height: 779px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  /*background-color: #000;*/
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 744px) {
+  .submenu {
+    height: 151px;
+  }
+}
+@media (max-width: 744px) {
+  
+  .ax_default a img {
+  width: 80px;
+  height: 50px;
+  }
+}
+
+

@@ -1,0 +1,429 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  width: 100%;
+  padding-bottom: 0;
+  color: #5a5a5a;
+}
+/*修改导航栏高度*/
+.navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: SimHei;
+  font-size: 14px;
+}
+.navbar-brand {
+  height: 44px;
+  padding-top: 10px;
+}
+.navbar {
+  min-height: 44px;
+  background-color: #C94445;
+}
+.navbar-toggle {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.img:hover {
+  transform: scale(1.1);
+}
+
+
+.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 38px;
+  background-color: #F19178;
+}
+.language {
+  width: 100px;
+  padding-top: 7px;
+  margin-right: 22px;
+  float: right;
+}
+.language_1 {
+  font-color:#3C3C3C;
+  margin-right: 5px; 
+  text-align : center;
+  display: inline;
+  float: right;
+}
+.language_1 a {
+  color: #6C6C6C;
+  text-decoration:none;
+}
+.language_1 a:hover {
+  color:#fff;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar-static-top {
+  position: relative;
+  top: 38px;
+  margin-bottom: 0;
+}
+.center {
+  text-align: center;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+  margin-bottom: 0px;
+  margin-top: 38px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  /*background: url(images/保恒投资管理-卓恒资本/u3.jpg) center no-repeat;*/
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+  cursor: pointer;
+}
+/*轮播图标栏*/
+  .carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background:url(../images/保恒投资管理-卓恒资本/1.png) center no-repeat;
+    /*background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;*/
+  }
+  .carousel-indicators .active {
+    width: 20px;
+    height: 10px;
+    margin: 1px;
+    background:url(../images/保恒投资管理-卓恒资本/2.png) center no-repeat;
+  }
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.middle {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.linear {
+  border:1px solid #fff;
+  FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#b8c4cb,endColorStr=red); /*IE 6 7 8*/ 
+  background: -ms-linear-gradient(top, #fff, #ADADAD);        /* IE 10 */
+  background:-moz-linear-gradient(top,#fff,#ADADAD);/*火狐*/ 
+  background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#fff), to(#ADADAD));/*谷歌*/ 
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ADADAD));      /* Safari 4-5, Chrome 1-9*/
+  background: -webkit-linear-gradient(top, #fff, #ADADAD);   /*Safari5.1 Chrome 10+*/
+  background: -o-linear-gradient(top, #fff, #ADADAD);  /*Opera 11.10+*/
+}
+
+.marketing .col-lg-3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h4 {
+  font-weight: normal;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin-top: 50px; /* Space out the Bootstrap <hr> more */
+  margin-bottom: 0;
+  border: 0.1px solid #d0d0d0;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #000;
+  font-size: 11px;
+  font-family: SimHei;
+  font-weight: 600;
+}
+.list {
+  padding-left: 0;
+}
+.list li {
+  list-style-type:none;
+  font-size: 11px;
+  font-family: SimHei;
+  color: #3E3E3E;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.foot {
+  padding-top: 10px;
+}
+.foot-font p {
+  font-size: 10px;
+  font-family: SimHei;
+  color: #3E3E3E;
+  font-weight: 500;
+}
+.text h1 {
+    font-family: SimHei;
+    font-size: 25px;
+    color: #1C1C1C;
+    margin-top: 40px;
+    margin-bottom: 10px; 
+  }
+.text a {
+    font-family: SimHei;
+    font-size: 10px;
+    color: #0066FF; 
+  }
+.f-left {
+  text-align: center;
+}
+.f-right {
+  text-align: center;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+@media (min-width: 767px) and (max-width: 991px) {
+  .col-lg-3 {
+    width: 50%;
+    float: left; 
+    padding: 0px 0px;           
+  }
+  .navbar-center {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  }
+  /*轮播图标栏*/
+  .carousel-indicators li {
+    display: inline-block;
+    width: 70px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background:url(../images/保恒投资管理-卓恒资本/2_u26.png) center no-repeat;
+    /*background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;*/
+  }
+  .carousel-indicators .active {
+    width: 70px;
+    height: 10px;
+    margin: 1px;
+    background:url(../images/保恒投资管理-卓恒资本/1_u24.png) center no-repeat;
+  }
+  .text h1 {
+    font-family: SimHei;
+    font-size: 50px;
+    color: #1C1C1C;
+    margin-top: 120px;
+    margin-bottom: 50px; 
+  }
+  .text a {
+    font-family: SimHei;
+    font-size: 18px;
+    color: #0066FF; 
+  }
+}
+/*移动端*/
+@media (max-width: 767px) {
+  .col-lg-3 {
+    width: 100%;
+    float: left;            
+    padding: 0px 0px;
+  }
+  
+  
+}
+@media (min-width: 991px) {
+  .featurette-heading {
+    margin-top: 20px;
+  }
+  .navbar-center {
+  margin-left: 15px;
+  }
+  .col-lg-3 {
+    width: 50%;
+    float: left;            
+    padding: 0px 0px;
+  }
+  /*轮播图标栏*/
+  .carousel-indicators li {
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background:url(../images/保恒投资管理-卓恒资本/2_u26.png) center no-repeat;
+    /*background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;*/
+  }
+  .carousel-indicators .active {
+    width: 80px;
+    height: 10px;
+    margin: 1px;
+    background:url(../images/保恒投资管理-卓恒资本/1_u24.png) center no-repeat;
+  }
+  .f-left {
+    display: inline;
+    float: left;
+    margin-left: 45px;
+    text-align: right;
+  }
+  .f-right {
+    display: inline;
+    float: right;
+    margin-right: 50px;
+    text-align: left;
+  }
+  .text h1 {
+    font-family: SimHei;
+    font-size: 50px;
+    color: #1C1C1C;
+    margin-top: 120px;
+    margin-bottom: 50px; 
+  }
+  .text a {
+    font-family: SimHei;
+    font-size: 18px;
+    color: #0066FF; 
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    width: 25%;
+    float: left;            
+    padding: 0px 0px;
+  }
+  .col-md-2 {
+    /*margin-right: 30px;*/
+    width: 20%;
+    float: left; 
+  }
+  .navbar-center {
+  margin-left: 40px;
+  }
+  /*轮播图标栏*/
+  .carousel-indicators li {
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background:url(../images/保恒投资管理-卓恒资本/2_u26.png) center no-repeat;
+    /*background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;*/
+  }
+  .carousel-indicators .active {
+    width: 80px;
+    height: 10px;
+    margin: 1px;
+    background:url(../images/保恒投资管理-卓恒资本/1_u24.png) center no-repeat;
+  }
+  .f-left {
+    display: inline;
+    float: left;
+    margin-left: 140px;
+    text-align: right;
+  }
+  .f-right {
+    display: inline;
+    float: right;
+    margin-right: 145px;
+    text-align: left;
+  }
+  .text h1 {
+    font-family: SimHei;
+    font-size: 67px;
+    color: #1C1C1C;
+    margin-top: 120px;
+    margin-bottom: 50px; 
+  }
+  .text a {
+    font-family: SimHei;
+    font-size: 25px;
+    color: #0066FF; 
+  }
+}
